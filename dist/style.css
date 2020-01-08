@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: steelblue;
+}
+
+.container {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  max-width: 1100px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty {
+  width: 100%;
+  height: 300px;
+  border: 3px solid salmon;
+  position: relative;
+  background: #ccc;
+}
+
+.filled {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 97%;
+  height: 97%;
+  background: url("./img/photo-1573210000301-a3afde45c1bd.jpeg") no-repeat
+    center center / cover;
+  cursor: pointer;
+}
+
+.filled-2 {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 97%;
+  height: 97%;
+  background: url("./img/second.jpeg") no-repeat center center / cover;
+  cursor: pointer;
+}
+.filled-3 {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 97%;
+  height: 97%;
+  background: url("./img/third.jpeg") no-repeat center center / cover;
+  cursor: pointer;
+}
+.filled-4 {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 97%;
+  height: 97%;
+  background: url("./img/forth.jpeg") no-repeat center center / cover;
+  cursor: pointer;
+}
+
+.hold {
+  border: solid #f4f4f4 4px;
+}
+
+.hover {
+  border: 3px dashed;
+}
+
+.invisible {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .empty {
+    width: 200px;
+    height: 200px;
+    border: 3px solid salmon;
+    position: relative;
+    background: #ccc;
+    justify-self: center;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
