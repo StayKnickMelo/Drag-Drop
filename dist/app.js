@@ -1,6 +1,4 @@
-// const fill = document.querySelector('.filled');
-// const fillTwo = document.querySelector('.filled-2');
-// const fillThree = document.querySelector('.filled-2');
+
 
 const emtyBoxes = document.querySelectorAll('.empty');
 const fills = document.querySelectorAll('.fill');
@@ -57,20 +55,6 @@ function dragStart(e) {
 
 
 function dragEnd(e) {
-
-  // const id = e.target.id;
-
-  // const currentImg = document.querySelector(`#${id}`);
-
-  // const currentImgClass = currentImg.className;
-
-  // fills.forEach(fill => {
-  //   if(fill.id === id){
-  //     fill.className = currentImgClass;
-  //     fill.classList.remove('invisible');
-  //     fill.classList.remove('hold');
-  //   };
-  // })
 
   e.target.classList.remove('invisible');
   e.target.classList.remove('hold');
